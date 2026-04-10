@@ -1,0 +1,11 @@
+[user]
+	email = stefan.spitse@student.nhlstenden.com
+	name = StefanSpitse4pm
+[core]
+	autocrlf = input
+[push]
+	default = simple
+[credential]
+	helper = store
+[init]
+	defaultBranch = main

@@ -3,9 +3,10 @@ return {
 	version = "v2.*",
 	build = "make install_jsregexp",
 	dependencies = {
-    "rafamadriz/friendly-snippets", -- actual snippet collection
+    "rafamadriz/friendly-snippets", 
 	},
 	config = function()
+		require("luasnip.loaders.from_vscode").lazy_load()
 		local ls = require("luasnip")
 		vim.keymap.set({"i", "s"}, "<C-K>", function()
 		  if ls.expand_or_jumpable() then

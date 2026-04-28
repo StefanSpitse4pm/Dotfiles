@@ -19,5 +19,8 @@ return {
 			capabilities = capabilities,	
 		})
 		vim.lsp.enable('pyright')
+		vim.diagnostic.config({
+			virtual_lines = { current_line = true },
+		})
 	end
 }
